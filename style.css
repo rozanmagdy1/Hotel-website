@@ -1,0 +1,360 @@
+body{
+    margin: 0%;
+}
+*{
+    box-sizing: border-box;
+}
+/*------header part------*/
+header main{
+    display: flex;
+    flex-direction: row;
+    font-size: 15pt;
+    margin-left: 300px;
+    height: 47px;
+    padding-top: 5px;
+    perspective: 600px;
+    background-color: white;  
+} 
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;  
+}
+nav ul li{
+    font-size: 15pt;
+    margin-left: 30px;
+    border-left: 2px solid rgb(0 38 255 / 22%);
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li:hover{
+    border: 2px solid rgb(0 38 255 / 22%);
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: none;
+}
+
+header #mainimg{
+    width: 100%;
+    height: 607px;
+    position: relative;
+    z-index: 1;
+}
+
+header #rates{
+    position: absolute;
+    top:599px;
+    left:495px;
+    background-color: #ffffffc2;
+    z-index: 2;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+header #rates .star{
+    padding: 20px;
+    font-size: 20pt;
+}
+header #rates .checked{
+    color: #007eff96;
+}
+
+/*------about part-------*/
+#about-section{
+    background-color: whitesmoke;
+}
+#about-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.about-items{
+    width: 500px;
+    height: 400px;
+}
+.titles{
+    padding-top: 10px;
+    text-align: center;
+    font-family: Copperplate Gothic Light;
+    letter-spacing: 3px;
+}
+#about-section div p{
+    line-height: 30px;
+    word-break: break-all;
+    margin-top: 50px;
+}
+#about-section div img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*-----Rooms----*/
+.room-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.room-container-item{
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid rgb(16 140 221 / 50%);
+}
+.rooms-imgs{
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 0px;
+}
+
+.rooms-info{
+    height: 160px;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 3px;
+    font-family: Garamond;
+    font-size: 14pt;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.555), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 0px;
+}
+
+/*----link to external rooms images part------*/
+#externalimagespart{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    font-size: 15pt;
+    font-family: NSimSun;
+    padding-top: 27px;
+}
+.extroomimgs{
+    background-color: rgba(16, 139, 221, 0.363);
+    opacity: 0.94;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 3px;
+    padding: 5px;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+
+}
+.extroomimgs:hover{
+    background-color: rgba(6, 40, 231, 0.438);
+}
+
+/*---------Reservation part---------*/
+#reservation_part{
+    height: 480px;
+    background-color: whitesmoke;
+
+}
+.icons{
+    width: 15px;
+    height: 15px;
+}
+#book-img img{
+    width: 80%;
+    height: 82%;
+    object-fit: cover;
+}
+#reservation_form{
+    width:  650px;
+    height: 341px;
+    margin-top: 10px;
+    margin-left: 80px;
+    box-shadow: 0 6px 20px 0 white, 0 4px 8px 0 rgba(4, 23, 133, 0.438);
+}
+.form-grid{
+    display: grid;
+    grid-template-columns:  406px 500px;
+    background-color: white;
+    padding-top: 40px;
+    padding-left: 25px;
+    margin-top: 0%;
+    padding-bottom: 27px;
+}
+#reservation_form p{
+    background-color: rgba(16, 139, 221, 0.363);
+    color: white;
+    width: 100%;
+    margin-bottom: 0%;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: Oldtown;
+    font-size: 15pt;
+    margin-right: 20px;
+}
+#chooseroom_id{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: 250px;
+}
+#reservation_container{
+    display: flex;
+    flex-direction: row;
+}
+#reservation_form input{
+    padding: 5px;
+    width: 190px;
+    border:1px solid rgba(0, 0, 0, 0.281);
+}
+#check-btn{
+    background-color: whitesmoke;
+    width: 170px;
+    height: 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    margin-left: 220px;
+    margin-top: 20px;
+    transition: all 1s ease-in-out;
+}
+#check-btn:hover{
+    background-color: rgb(16 140 221 / 50%);
+}
+
+/* ------contact form--------*/
+#contactus-container{
+    display: flex;
+    flex-direction: row;
+
+}
+#contactus-part{
+    font-size: 13pt;
+}
+#contact-intro{
+    margin-left: 6%;
+}
+#contact-form{
+    box-shadow: 0 6px 20px 0 white, 0 4px 8px 0 rgba(4, 23, 133, 0.438);
+    width: 35%;
+    margin-left: 13%;
+}
+#contact-form input{
+    border: 1px solid rgba(6, 40, 231, 0.247);
+    height: 8%;
+    width: 50%;
+
+}
+#contact-form input[type='text']{
+    margin-left: 2%;
+}
+#contact-form textarea{
+    border: 1px solid rgba(6, 40, 231, 0.247);
+    resize: none;
+    height: 40%;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 4px;
+}
+#contact-form lable{
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    line-height: 5px;
+    margin-left: 13%;
+}
+
+.contactus-container-items img{
+    width: 113%;
+    height: 320px;
+    margin-left: 100px;
+    object-fit: cover;
+    margin-top: 50px;
+}
+.contactus-container-items{
+    height: 430px;
+}
+.contact-icons{
+    width: 1.5%;
+    height: 3%;
+    margin-left: 2%;
+}
+#contact-intro{
+    letter-spacing: 1px;
+    word-spacing: .5px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 25px;
+}
+#contact-form-title{
+    margin-bottom: 4%;
+    background-color: black;
+    opacity: 0.94;
+    color: white;
+    width: 100%;
+    text-align: center;
+    height: 8%;
+    padding-top: .5%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15pt;
+}
+#contact-btn{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    opacity: 0.94;
+    margin-left:35%;
+    display: block;
+    width: 150px;
+    margin-top: 10px;
+    transition: all 1s ease-in-out;
+}
+#contact-btn:hover{
+    background-color: rgb(16 140 221 / 50%);
+}
+footer{
+    background-color: #000000f2;
+    height: 150px;
+    color: white;
+}
+#footer-part{
+    display: flex;
+    flex-direction: column;
+    font-family: NSimSun;
+    font-size: 14pt;
+}
+footer ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+footer ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13pt;
+    margin-left: 20px;
+}
+.last-icons{
+    width: 3%;
+    height: 4%;
+
+}
+.footer-item{
+    margin-left: 30%;
+}
+footer #copy{
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.856);
+    color: white;
+    text-align: center;
+    font-size: 15pt;
+    height: 50px;
+    padding-top: 15px;
+}
+.arrow{
+    margin-right: 2%;
+    margin-left: 2%;
+}
+

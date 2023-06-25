@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <main>
+                <img src="" id="logo">
+                
+                <nav>
+                    <ul>
+                        <li><a href="#about-section">About</a></li>
+                        <li><a href="#room_part">Rooms</a></li>
+                        <li><a href="#reservation_part">Reservation</a></li>
+                        <li><a href="#contactus-part">Contact</a></li>
+                    </ul>
+                </nav>
+            </main>
+
+            <div id="rates">
+                <span class="fa fa-star checked star"></span>
+                <span class="fa fa-star checked star"></span>
+                <span class="fa fa-star checked star"></span>
+                <span class="fa fa-star checked star"></span>
+                <span class="fa fa-star star"></span>
+            </div>
+
+            <img src="images/blue-exotic-hotel-189296.jpg" id="mainimg">
+
+        </header><br>
+
+        <!-----------------about part------------------>
+        <section id="about-section">
+            <h1 class="titles">About</h1><br>
+            <div id="about-container">
+                <p class="about-items">It is very important for the customer to pay attention to the adipiscing process. So that they achieve pain! The inventor hates to be repulsed by the harshest flight, no great advantage, they happen to provide any services. Moreover, if the pain itself is important, the adipiscing will be followed. So that they achieve pain! The inventor hates to be repulsed by the harshest flight, no great advantage, they happen to provide any services. Moreover, if the pain itself is important, the adipiscing will be followed. So that they achieve pain! Find out more about flight </p>
+
+                <img src="images/Voco-Hotel-Dubai.jpg" class="about-items">
+            </div>
+        </section><br><br><br>
+
+        <!----------------rooms part------------------------>
+
+        <section id="room_part">
+            <h1 class="titles">Rooms</h1>
+            <div class="room-container">
+                <div class="room-container-item">
+                    <img src="images/single_room.jpg" class="rooms-imgs">
+                    <div class="rooms-info">
+                        <p class="rooms-info-Discr">Sea View <br> Starts from 200$<br> Meduim && large rooms<br> Single && Double Bed</p>
+                        
+                    </div>
+                </div>
+
+                <div class="room-container-item">
+                    <img src="images/double_room.jpg" class="rooms-imgs">
+                    <div class="rooms-info" style="line-height: 40px;">
+                        <p class="rooms-info-Discr">Sea View && Not Sea View <br> Starts from 400$<br> Meduim && large rooms</p>
+                    </div>  
+                </div>
+                
+                <div class="room-container-item">
+                    <img src="images/Triple_Room.jpg" class="rooms-imgs">
+                    <div class="rooms-info"  style="line-height: 40px;">
+                        <p class="rooms-info-Discr">Sea View && Not Sea View <br> Starts from 500$<br> Meduim && large rooms</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <br><br>
+
+
+        <!-----link to external rooms images part----->
+        </section><br><br><br>
+        <section id="externalimagespart">
+            Want to see our room ?<br><br>
+            <a href="singlerooms.html" class="extroomimgs">Single Rooms</a>
+            <a href="" class="extroomimgs">Double Rooms</a>
+            <a href="" class="extroomimgs">Triple Rooms</a>
+        </section>
+        <br><br><br>
+        
+        <!--Reservation part-->
+        <section id="reservation_part">
+            <h1 class="titles">Make reservation</h1><br>
+            <div id="reservation_container">
+                <form id="reservation_form">
+                    <p>Hotel Name</p>
+                    <div class="form-grid">
+                        <!--item1-->
+                        <div class="from-item-grid">
+                            <lable for="checkin" style="margin-left:45px;line-height: 30px;">
+                                <img src="images/calendar.png" class="icons"> Check-in</lable><br>
+                            <input type="datetime" id="checkin" name="checkin"><br>
+                        </div>
+    
+                        <!--item2-->
+                        <div class="from-item-grid">
+                            <lable for="checkout" style="margin-left:49px;line-height: 30px;">
+                                <img src="images/calendar.png" class="icons"> Check-out</lable><br>
+                            <input type="datetime" id="checkout" name="checkout"><br>
+                        </div>
+    
+                        <!--item3-->
+                        <div class="from-item-grid">
+                            <lable for="u_name" style="margin-left:55px;line-height: 30px;">
+                                <img src="images/person.png" class="icons">  Name</lable><br>
+                            <input type="text" id="u_name" name="u_name">
+                        </div>
+    
+                        <!--item4-->
+                        <div class="from-item-grid">
+                            <lable for="checkout" style="margin-left:60px;line-height: 30px;">
+                                <img src="images/phone.svg" class="icons">  Phone</lable><br>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+    
+                        <!--item5-->
+                        <div class="from-item-grid" id="chooseroom_id">
+                            <lable for="rooms" style="margin-left:-8px;line-height: 30px;">
+                                <img src="images/room.png" class="icons">  Choose your room</lable><br>
+                            <input list="rooms" style="margin-left: -40px;">
+                            <datalist id="rooms">
+                                <option>SigleRoom</option>
+                                <option>DoubleRoom</option>
+                                <option>TripleRoom</option>
+                            </datalist>
+                        </div>
+    
+                        <!--item6-->
+                        <a id="check-btn" href="">Check availabilities</a>
+                    </div>
+                </form>
+                <div id="book-img"><img src="images/hotel-booking.png"></div>
+            </div>
+        </section>
+        
+        <!--Contact us -->
+        <section id="contactus-part">
+            <h1 class="titles">Contact Us</h1>
+            <div id="contact-intro">
+                <p>If you have any questions, do not hesitate to ask them</p>
+                <p><img src="images/location.webp" class="contact-icons"><span> Egypt, Alexandria</span><br><br>
+                    <img src="images/phone.png" class="contact-icons"> <span>Phone: 01030166199</span><br> <br>
+                    <img src="images/email.png" class="contact-icons"><span> Email: rozanmagdy1@mail.com</span>
+                </p>
+            </div><br>
+
+            <div id="contactus-container">
+                <form id="contact-form" class="contactus-container-items">
+                    <div id="contact-form-title">Hotel Name</div>
+                    <lable for="reviewer-name">Name</lable>
+                    <input id="reviewer-name" name="reviewer-name" type="text"><br><br>
+                    <lable for="reviewer-phone">Phone</lable>
+                    <input id="reviewer-phone" name="reviewer-phone" type="tel"><br><br>
+                    <lable for="review" style="margin-left: 22%;">Please Write Your Review</lable><br>
+                    <textarea id="review" name="review"></textarea>
+                    <a  href ='' class="extroomimgs" id="contact-btn">Submit</a>
+                </form>
+
+                <div class="contactus-container-items">
+                    <img src="images/get-in-touch.png">
+                </div>
+            </div>
+        </section><br><br><br><br>
+
+        <!--footer-->
+        <footer>
+            <div id="footer-part">
+                <br>
+                <div class="footer-item">
+                    <ul>
+                        Links <span class="glyphicon glyphicon-arrow-right arrow"></span>
+                        <li><a href="#about-section">About</a></li>
+                        <li><a href="#room_part">Rooms</a></li>
+                        <li><a href="#reservation_part">Reservation</a></li>
+                        <li><a href="#contactus-part">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-item" style="margin-left:27%">
+                    <ul>
+                        <li><a class="facebook" href=""><i class="fa fa-facebook"></i></a><a href="#">facebook</a></li>
+                        <li><a class="twitter" href=""><i class="fa fa-twitter"></i></a><a href="#">Twitter</a></li>
+                        <li><a class="instagram" href=""><i class="fa fa-instagram"></i></a><a href="#">Instagram</a></li>
+                        <li><a class="whatsapp" href=""><i class="fa fa-whatsapp"></i></a><a href="#">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p id="copy">&COPY; Created By Rozan Magdy </p>
+        </footer>
+        
+
+    </body>
+</html>
